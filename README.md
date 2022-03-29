@@ -6,3 +6,4 @@ flutter ecommerce application for onoq.sa
   - dio.
   - WooCommerce Api.
   - MVVM.
+  - Hive.
