@@ -30,7 +30,7 @@ class NormalText extends StatelessWidget {
   final int? maxLines;
   final TextAlign? textAlign;
   final bool isUnderline;
-
+ final TextDirection textDirection;
   const NormalText({
     Key? key,
     required this.text,
@@ -40,6 +40,7 @@ class NormalText extends StatelessWidget {
     this.maxLines,
     this.textAlign,
     this.isUnderline = false,
+    this.textDirection=TextDirection.ltr,
   }) : super(key: key);
 
   @override
@@ -48,6 +49,7 @@ class NormalText extends StatelessWidget {
       text!,
       maxLines: maxLines,
       textAlign: textAlign,
+      textDirection: textDirection,
       style: TextStyle(
         fontSize: fontSize,
         fontWeight: fontWeight,

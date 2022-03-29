@@ -11,7 +11,8 @@ class ProductCardShimmer extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-          width: double.infinity,
+          width: 50.w,
+          height: 50.w,
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
@@ -19,7 +20,7 @@ class ProductCardShimmer extends StatelessWidget {
               BoxShadow(
                 color: Colors.black12,
                 blurRadius: 10,
-                offset: Offset(0, 10),
+                offset: Offset(0, 3),
               ),
             ],
           ),
